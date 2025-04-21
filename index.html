@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MCQ Quiz</title>
+    <link rel="stylesheet" href="quiz.css">
+</head>
+<body>
+    <div class="quiz-container" id="home-screen">
+        <h1>Ready to test your knowledge about Saad Khan?</h1>
+        <button onclick="startQuiz()">Play</button>
+    </div>
+
+    <div class="quiz-container" id="quiz-screen" style="display: none;">
+        <h1>Simple MCQ Quiz</h1>
+        <form id="quiz-form"></form>
+        <div id="result" style="display:none;"></div>
+        <button id="retry-button" onclick="resetQuiz()" style="display:none;">Go Again</button>
+    </div>
+
+    <div class="quiz-container" id="perfect-score-screen" style="display: none;">
+        <h1>You’re a Saad Khan Expert 🎉</h1>
+        <p>Flawless victory! You clearly know greatness when you see it.</p>
+        <img src="sniffingRedBull.jpg" alt="Celebration Image" style="max-width: 80%; border-radius: 12px; margin: 20px 0;">
+        <br>
+        <button onclick="resetQuiz()">Play Again</button>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
